@@ -16,7 +16,8 @@
   "dependencies": {
     "@dot-event/fetch": "0.0.1",
     "@dot-event/log": "next2",
-    "@dot-event/render": "0.0.3",
+    "@dot-event/render": "0.0.5",
+    "@dot-event/store": "next2",
     "@dot-event/view": "0.0.6",
     "attodom": "hville/attodom",
     "dot-event": "next2",

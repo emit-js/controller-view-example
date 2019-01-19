@@ -16,7 +16,7 @@ function render(prop, arg, dot) {
       </head>
 
       <body>
-        {dot.helloView()}
+        {dot.videosController(prop)}
         <script src="main.js" />
       </body>
     </html>
