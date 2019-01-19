@@ -13,5 +13,5 @@ function update(prop, arg, { get }) {
 }
 
 function render() {
-  return <div id="main" update={update} />
+  return <div id="videos" update={update} />
 }
