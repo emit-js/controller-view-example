@@ -18,7 +18,7 @@
     "@dot-event/log": "next2",
     "@dot-event/render": "0.0.6",
     "@dot-event/store": "next2",
-    "@dot-event/view": "0.0.6",
+    "@dot-event/view": "0.0.8",
     "attodom": "hville/attodom",
     "dot-event": "next2",
     "express": "4.16.4",
@@ -75,6 +75,11 @@
             [
               "match",
               "lib/**/*.js",
+              "wholename"
+            ],
+            [
+              "match",
+              "lib/**/*.jsx",
               "wholename"
             ]
           ],

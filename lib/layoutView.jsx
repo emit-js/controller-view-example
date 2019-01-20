@@ -1,26 +1,24 @@
 /** @jsx el */
 import { el } from "attodom"
 
-export default function({ beforeAny, view }) {
-  beforeAny("layoutView", (prop, arg, dot, e) =>
-    view(e, prop, { ...arg, render })
-  )
+export default function(dot) {
+  dot.view("layoutView", { render, update })
 }
 
-function update(prop, arg, dot) {
+function update(prop, { element }, dot) {
   const script = document.createElement("script"),
     state = JSON.stringify(dot.state.store)
 
   script.appendChild(
-    document.createTextNode(`window.store=${state};`)
+    document.createTextNode(`window.store=${state}`)
   )
 
-  this.querySelector("head").appendChild(script)
+  element.querySelector("head").appendChild(script)
 }
 
 function render(prop, arg, dot) {
   return (
-    <html lang="en" update={update}>
+    <html lang="en">
       <head>
         <meta charset="utf-8" />
         <title>Render View Test</title>
