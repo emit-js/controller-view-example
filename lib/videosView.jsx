@@ -8,7 +8,7 @@ export default function(dot) {
 function update(prop, arg, { get }) {
   const videos = get(prop, "videos")
   if (videos) {
-    this.innerHTML = videos.join("<br/>")
+    arg.element.innerHTML = videos.join("<br/>")
   }
 }
 
