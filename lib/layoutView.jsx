@@ -2,7 +2,7 @@
 import { el } from "attodom"
 
 export default function(dot) {
-  require("./videosController").default(dot)
+  dot.add(require("./videosController"))
   dot.view("layoutView", { render, update })
 }
 
