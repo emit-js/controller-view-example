@@ -31,6 +31,7 @@
     "@babel/core": "7.2.2",
     "@babel/plugin-proposal-class-properties": "7.2.3",
     "@babel/plugin-proposal-object-rest-spread": "7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-transform-runtime": "7.2.0",
     "@babel/preset-env": "7.2.3",
     "@babel/preset-react": "7.0.0",
@@ -51,7 +52,7 @@
   },
   "main": "dom.js",
   "scripts": {
-    "build": "babel lib --out-dir dist --source-maps; node dist/build.js",
+    "build": "babel lib --out-dir dist --source-maps; node --experimental-modules dist/build.js",
     "prepublishOnly": "npm run build",
     "watch": "babel lib --watch --out-dir dist --source-maps",
     "fix": "npm run lint -- --fix",
@@ -112,6 +113,7 @@
     "plugins": [
       "@babel/plugin-proposal-class-properties",
       "@babel/plugin-proposal-object-rest-spread",
+      "@babel/plugin-syntax-dynamic-import",
       "@babel/plugin-transform-runtime"
     ]
   },
