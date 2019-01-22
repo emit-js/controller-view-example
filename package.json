@@ -21,7 +21,6 @@
     "@dot-event/view": "0.0.10",
     "attodom": "hville/attodom",
     "dot-event": "next2",
-    "express": "4.16.4",
     "jsdom": "13.1.0",
     "webpack": "4.28.4",
     "webpack-cli": "3.2.1"
