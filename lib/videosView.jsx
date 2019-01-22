@@ -6,16 +6,16 @@ export default function(dot) {
 }
 
 function update(prop, arg, { get }) {
-  const videos = get(prop, "videos")
+  const videos = get(prop)
   if (videos) {
     arg.element.innerHTML = videos.join("<br/>")
   }
 }
 
 function render(prop, arg, { get }) {
-  const videos = get(prop, "videos") || []
+  const videos = get(prop) || []
   return (
-    <div id="videos">
+    <div id={prop.join(".")}>
       {videos.map(video => (
         <div key={video}>{video}</div>
       ))}
