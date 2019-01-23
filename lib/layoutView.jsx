@@ -6,15 +6,14 @@ export default function(dot) {
   dot.view("layoutView", { render, update })
 }
 
-function update(prop, { element }, dot) {
-  const script = document.createElement("script"),
-    state = JSON.stringify(dot.state.store)
+function update(prop, { addState, ssr }, dot) {
+  if (addState) {
+    addStateToHead(dot)
+  }
 
-  script.appendChild(
-    document.createTextNode(`window.store=${state}`)
-  )
-
-  element.querySelector("head").appendChild(script)
+  if (ssr) {
+    dot.videosController(prop)
+  }
 }
 
 function render(prop, arg, dot) {
@@ -31,4 +30,15 @@ function render(prop, arg, dot) {
       </body>
     </html>
   )
+}
+
+function addStateToHead(dot) {
+  const script = document.createElement("script"),
+    state = JSON.stringify(dot.state.store)
+
+  script.appendChild(
+    document.createTextNode(`window.store=${state}`)
+  )
+
+  document.querySelector("head").appendChild(script)
 }
