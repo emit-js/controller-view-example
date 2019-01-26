@@ -1,24 +1,23 @@
 /** @jsx el */
-import { el } from "attodom"
+import { el, list } from "attodom"
 
 export default function(dot) {
   dot.view("videosView", { render, update })
 }
 
+function render(prop) {
+  return <div id={prop.join(".")} />
+}
+
 function update(prop, arg, { get }) {
   const videos = get(prop)
+
   if (videos) {
-    arg.element.innerHTML = videos.join("<br/>")
+    const elements = list(arg.element, video)
+    elements.update(videos)
   }
 }
 
-function render(prop, arg, { get }) {
-  const videos = get(prop) || []
-  return (
-    <div id={prop.join(".")}>
-      {videos.map(video => (
-        <div key={video}>{video}</div>
-      ))}
-    </div>
-  )
+function video({ id, title }) {
+  return <div key={id}>{title}</div>
 }

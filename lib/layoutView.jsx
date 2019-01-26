@@ -2,18 +2,8 @@
 import { el } from "attodom"
 
 export default function(dot) {
-  dot.add(require("./videosController"))
+  dot.add(require("./videosView"))
   dot.view("layoutView", { render, update })
-}
-
-function update(prop, { addState, ssr }, dot) {
-  if (addState) {
-    addStateToHead(dot)
-  }
-
-  if (ssr) {
-    dot.videosController(prop)
-  }
 }
 
 function render(prop, arg, dot) {
@@ -25,11 +15,17 @@ function render(prop, arg, dot) {
       </head>
 
       <body>
-        {dot.videosController(prop)}
+        {dot.videosView("videos", prop)}
         <script src="main.js" />
       </body>
     </html>
   )
+}
+
+function update(prop, { addState }, dot) {
+  if (addState) {
+    addStateToHead(dot)
+  }
 }
 
 function addStateToHead(dot) {
