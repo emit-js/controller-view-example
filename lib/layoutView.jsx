@@ -1,8 +1,7 @@
-/** @jsx el */
-import { el } from "attodom"
+/** @jsx dot.el */
 
 export default function(dot) {
-  dot.add(require("./videosView"))
+  require("./videosView").default(dot)
   dot.view("layoutView", { render, update })
 }
 
@@ -15,7 +14,7 @@ function render(prop, arg, dot) {
       </head>
 
       <body>
-        {dot.videosView("videos", prop)}
+        {dot.videosView(prop)}
         <script src="main.js" />
       </body>
     </html>
