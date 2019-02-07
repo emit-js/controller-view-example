@@ -2,7 +2,7 @@
 
 [dot-event](https://github.com/dot-event/dot-event2#readme) web framework example project
 
-![controller](controller.gif)
+![web](web.gif)
 
 ## Install
 
