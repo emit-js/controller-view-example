@@ -58,7 +58,7 @@
     "lint": "eslint --ignore-path .gitignore --ext=js .",
     "package": "npm run build; webpack --mode=production",
     "pretty": "prettier --write **/*.css **/*.json **/*.md",
-    "start": "webpack-dev-server"
+    "start": "npm run build; webpack-dev-server"
   },
   "operations": {
     "starter": {},
