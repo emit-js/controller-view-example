@@ -1,6 +1,6 @@
 # web-example
 
-[dot-event](https://github.com/dot-event/dot-event2#readme) web framework example project
+[dot-event](https://github.com/dot-event/dot-event#readme) web framework example project
 
 ![web](web.gif)
 
@@ -39,7 +39,7 @@ Then upload the `bundle` directory somewhere.
 | controller | DOM controller       | https://github.com/dot-event/controller#readme |
 | el         | DOM elements         | https://github.com/dot-event/el#readme         |
 | fetch      | Universal HTTP fetch | https://github.com/dot-event/fetch#readme      |
-| log        | Event logger         | https://github.com/dot-event/log2#readme       |
+| log        | Event logger         | https://github.com/dot-event/log#readme        |
 | render     | Server side render   | https://github.com/dot-event/render#readme     |
-| store      | Immutable store      | https://github.com/dot-event/store2#readme     |
+| store      | Immutable store      | https://github.com/dot-event/store#readme      |
 | view       | DOM view             | https://github.com/dot-event/view#readme       |
