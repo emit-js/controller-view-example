@@ -1,6 +1,6 @@
 /** @jsx dot.el */
 
-export default function(dot) {
+module.exports = function(dot) {
   dot.view("videosView", { render })
 }
 

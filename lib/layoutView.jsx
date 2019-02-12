@@ -1,7 +1,7 @@
 /** @jsx dot.el */
 
-export default function(dot) {
-  require("./videosView").default(dot)
+module.exports = function(dot) {
+  require("./videosView")(dot)
   dot.view("layoutView", { render, update })
 }
 
