@@ -21,7 +21,7 @@
     "@dot-event/render": "0.0.10",
     "@dot-event/store": "7.0.12",
     "@dot-event/view": "0.0.21",
-    "dot-event": "3.0.32",
+    "dot-event": "3.0.33",
     "webpack": "4.28.4",
     "webpack-cli": "3.2.1"
   },
