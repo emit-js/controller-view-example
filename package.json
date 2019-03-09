@@ -56,7 +56,7 @@
     "watch": "babel lib --watch --out-dir dist --source-maps",
     "fix": "npm run lint -- --fix",
     "lint": "eslint --ignore-path .gitignore --ext=js .",
-    "package": "rm -rf bundle; npm run build; webpack --mode=production",
+    "package": "rm -rf bundle; npm run build; webpack --mode=production; open bundle/index.html",
     "pretty": "prettier --write **/*.css **/*.json **/*.md",
     "start": "npm run build; webpack-dev-server --open"
   },
