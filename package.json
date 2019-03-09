@@ -51,12 +51,12 @@
   },
   "main": "dom.js",
   "scripts": {
-    "build": "rm -rf bundle dist; babel lib --out-dir dist --source-maps; node --experimental-modules dist/build.js; webpack --mode=production",
+    "build": "rm -rf dist; babel lib --out-dir dist --source-maps; node --experimental-modules dist/build.js",
     "prepublishOnly": "npm run build",
     "watch": "babel lib --watch --out-dir dist --source-maps",
     "fix": "npm run lint -- --fix",
     "lint": "eslint --ignore-path .gitignore --ext=js .",
-    "package": "npm run build; webpack --mode=production",
+    "package": "npm run build; rm -rf bundle; webpack --mode=production",
     "pretty": "prettier --write **/*.css **/*.json **/*.md",
     "start": "npm run build; webpack-dev-server --open"
   },
