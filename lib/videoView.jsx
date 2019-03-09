@@ -1,7 +1,9 @@
 /** @jsx dot.el */
 
 module.exports = function(dot) {
-  dot.view("videoView", { idProp: true, render, update })
+  dot.any("videoViewRender", render)
+  dot.any("videoViewUpdate", update)
+  dot.view("videoView", { addProp: false })
 }
 
 function render(prop, arg, dot) {

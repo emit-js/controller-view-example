@@ -2,7 +2,10 @@
 
 module.exports = function(dot) {
   require("./videosView")(dot)
-  dot.view("layoutView", { render, update })
+
+  dot.any("layoutViewRender", render)
+  dot.any("layoutViewUpdate", update)
+  dot.view("layoutView")
 }
 
 function render(prop, arg, dot) {
