@@ -1,7 +1,7 @@
 {
   "name": "render-view-example",
   "private": true,
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "",
   "keywords": [
     ""
@@ -14,13 +14,13 @@
   "license": "MIT",
   "homepage": "https://github.com/dot-event/render-view-example#readme",
   "dependencies": {
-    "@dot-event/controller": "0.0.15",
+    "@dot-event/controller": "0.0.16",
     "@dot-event/el": "0.0.11",
-    "@dot-event/fetch": "0.0.13",
-    "@dot-event/log": "1.0.32",
-    "@dot-event/render": "0.0.21",
+    "@dot-event/fetch": "0.0.14",
+    "@dot-event/log": "1.0.33",
+    "@dot-event/render": "0.0.22",
     "@dot-event/store": "7.0.17",
-    "@dot-event/view": "0.0.32",
+    "@dot-event/view": "0.0.33",
     "dot-event": "3.2.1",
     "webpack": "4.28.4",
     "webpack-cli": "3.2.1"
