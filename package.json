@@ -1,7 +1,7 @@
 {
   "name": "render-view-example",
   "private": true,
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "",
   "keywords": [
     ""
@@ -14,13 +14,13 @@
   "license": "MIT",
   "homepage": "https://github.com/emit-js/render-view-example#readme",
   "dependencies": {
-    "@emit-js/controller": "0.0.17",
-    "@emit-js/el": "0.0.12",
-    "@emit-js/http": "0.0.20",
-    "@emit-js/log": "1.0.38",
-    "@emit-js/render": "0.0.23",
-    "@emit-js/store": "7.0.19",
-    "@emit-js/view": "0.0.34",
+    "@emit-js/controller": "0.0.18",
+    "@emit-js/el": "0.0.13",
+    "@emit-js/http": "0.0.21",
+    "@emit-js/log": "1.0.39",
+    "@emit-js/render": "0.0.24",
+    "@emit-js/store": "7.0.20",
+    "@emit-js/view": "0.0.35",
     "@emit-js/emit": "3.2.9",
     "webpack": "4.29.6",
     "webpack-cli": "3.3.0"
