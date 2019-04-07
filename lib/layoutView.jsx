@@ -1,14 +1,14 @@
-/** @jsx dot.el */
+/** @jsx emit.el */
 
-module.exports = function(dot) {
-  require("./videosView")(dot)
+module.exports = function(emit) {
+  require("./videosView")(emit)
 
-  dot.any("layoutViewRender", render)
-  dot.any("layoutViewUpdate", update)
-  dot.view("layoutView")
+  emit.any("layoutViewRender", render)
+  emit.any("layoutViewUpdate", update)
+  emit.view("layoutView")
 }
 
-function render(prop, arg, dot) {
+function render(arg, prop, emit) {
   return (
     <html lang="en">
       <head>
@@ -17,22 +17,22 @@ function render(prop, arg, dot) {
       </head>
 
       <body>
-        {dot.videosView(prop)}
+        {emit.videosView(prop, null)}
         <script src="main.js" />
       </body>
     </html>
   )
 }
 
-function update(prop, { addState }, dot) {
+function update(prop, { addState }, emit) {
   if (addState) {
-    addStateToHead(dot)
+    addStateToHead(emit)
   }
 }
 
-function addStateToHead(dot) {
+function addStateToHead(emit) {
   const script = document.createElement("script"),
-    state = JSON.stringify(dot.state.store)
+    state = JSON.stringify(emit.state.store)
 
   script.appendChild(
     document.createTextNode(`window.store=${state}`)

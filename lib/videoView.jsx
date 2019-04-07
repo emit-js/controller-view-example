@@ -1,16 +1,16 @@
-/** @jsx dot.el */
+/** @jsx emit.el */
 
-module.exports = function(dot) {
-  dot.any("videoViewRender", render)
-  dot.any("videoViewUpdate", update)
-  dot.view("videoView", { addProp: false })
+module.exports = function(emit) {
+  emit.any("videoViewRender", render)
+  emit.any("videoViewUpdate", update)
+  emit.view("videoView", { addProp: false })
 }
 
-function render(prop, arg, dot) {
+function render(arg, prop, emit) {
   const videoId = prop[prop.length - 1],
     videosProp = prop.slice(0, -1)
 
-  const video = dot
+  const video = emit
     .get(videosProp)
     .find(v => v.id === videoId)
 

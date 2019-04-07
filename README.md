@@ -1,13 +1,13 @@
 # web-example
 
-[dot-event](https://github.com/dot-event/dot-event#readme) web framework example project
+[emit](https://github.com/emit-js/emit#readme) web framework example project
 
 ![web](web.gif)
 
 ## Install
 
 ```bash
-git clone git@github.com:dot-event/web-example.git
+git clone git@github.com:emit/web-example.git
 cd web-example
 npm install
 ```
@@ -34,12 +34,12 @@ Then upload the `bundle` directory somewhere.
 
 ## Related composers
 
-| Library    | Description          | URL                                            |
-| ---------- | -------------------- | ---------------------------------------------- |
-| controller | DOM controller       | https://github.com/dot-event/controller#readme |
-| el         | DOM elements         | https://github.com/dot-event/el#readme         |
-| fetch      | Universal HTTP fetch | https://github.com/dot-event/fetch#readme      |
-| log        | Event logger         | https://github.com/dot-event/log#readme        |
-| render     | Server side render   | https://github.com/dot-event/render#readme     |
-| store      | Immutable store      | https://github.com/dot-event/store#readme      |
-| view       | DOM view             | https://github.com/dot-event/view#readme       |
+| Library    | Description          | URL                                          |
+| ---------- | -------------------- | -------------------------------------------- |
+| controller | DOM controller       | https://github.com/emit-js/controller#readme |
+| el         | DOM elements         | https://github.com/emit-js/el#readme         |
+| fetch      | Universal HTTP fetch | https://github.com/emit-js/fetch#readme      |
+| log        | Event logger         | https://github.com/emit-js/log#readme        |
+| render     | Server side render   | https://github.com/emit-js/render#readme     |
+| store      | Immutable store      | https://github.com/emit-js/store#readme      |
+| view       | DOM view             | https://github.com/emit-js/view#readme       |
